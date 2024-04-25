@@ -87,12 +87,11 @@ footer {
 }
 
 .products {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .item-product {
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
