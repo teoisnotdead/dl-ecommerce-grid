@@ -23,15 +23,20 @@ a {
   color: #393d46;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .container {
   display: grid;
-  grid-template-columns: .8fr 5fr;
-  grid-template-rows: .3fr 5fr .5fr;
+  grid-template-columns: 0.8fr 5fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header header'
     'aside section'
     'footer footer';
-  height: 100%;
+  min-height: 100vh;
   background-color: #ececec;
 }
 
@@ -65,7 +70,7 @@ footer {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  align-self: end;
+  align-items: center;
 }
 
 .categories {
@@ -104,7 +109,7 @@ footer {
   width: 80%;
 }
 
-.data-product{
+.data-product {
   display: flex;
   flex-direction: column;
   align-items: center;
